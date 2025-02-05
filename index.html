@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/images/logo.webp">
+    <link rel="preload" href="assets/images/personcoffee.webp" as="image">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -38,7 +39,12 @@
     </nav>
 
     <section id="inicio" class="position-relative vh-100">
-        <img src="assets/images/personcoffee.webp" class="w-100 h-100 object-fit-cover position-absolute" alt="Café Artesanal" loading="lazy">
+        <img src="assets/images/personcoffee.webp" 
+             class="w-100 h-100 object-fit-cover position-absolute" 
+             alt="Café Artesanal" 
+             fetchpriority="high" 
+             width="1920" 
+             height="1080">
         <div class="position-absolute w-100 h-100 d-flex align-items-center">
             <div class="container text-white text-center">
                 <h1 class="display-2 fw-bold mb-4">Café artesanal único en Torreón</h1>
@@ -215,6 +221,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" async defer></script>
 </body>
 </html>
